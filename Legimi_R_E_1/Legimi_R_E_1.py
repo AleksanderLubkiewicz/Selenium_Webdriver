@@ -14,7 +14,7 @@ driver.get("https://www.legimi.pl/konto/zarejestruj/")
 # Zamknięcie zapytania o Cookis
 try:
     driver.implicitly_wait(10)
-    X_Cookis = driver.find_element(By.ID, "onetrust-reject-all-handler")
+    X_Cookis = driver.find_element(By.ID, "onetrust-accept-btn-handler")
     if X_Cookis:
         X_Cookis.click()
 except:
